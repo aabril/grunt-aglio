@@ -26,13 +26,14 @@ module.exports = function(grunt) {
     },
     connect: {
         all: {
-            options: {
+            //options: {
                 port: 7000,
                 hostname: "0.0.0.0",
+                base: "dest/",
                 // Prevents Grunt to close just after the task (starting the server) completes
                 // This will be removed later as 'watch' will take care of that
                 keepalive: true
-            }
+            //}
         }
     },
   });
